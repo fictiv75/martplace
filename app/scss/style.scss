@@ -1,26 +1,200 @@
-html {
-  box-sizing: border-box;
+@import "vars";
+@import "global";
+
+// HEADER
+.header {
+   // .header__top
+
+   &__top {
+      background-color: $bg;
+   }
+
+   // .header__top-inner
+
+   &__top-inner {
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   // .header__logo
+
+   &__logo {}
+
+   // .header__register
+
+   &__register {
+      margin-left: auto;
+      margin-right: 50px;
+
+      a {
+         padding: 6px;
+         width: 140px;
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+         border-radius: 18px;
+         background-color: #0674ec;
+         font-size: 14px;
+         color: #fff;
+         text-align: center;
+      }
+   }
+
+   // .header__icons-panel
+
+   &__icons-panel {
+      margin-right: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   // .header__info
+
+   &__info {
+      display: flex;
+      // .header__info-avatar
+
+      &-avatar {
+         margin-right: 22px;
+         width: 50px;
+         height: 50px;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+
+      // .header__info-name
+
+      &-name {
+         color: #333;
+         font-size: 16px;
+         font-weight: 500;
+      }
+
+      // .header__info-price
+
+      &-price {
+         display: block;
+         color: #0674ec;
+
+      }
+   }
+
+   // .header__menu
+
+   &__menu {
+
+      // .header__menu-inner
+
+      &-inner {
+         height: 80px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+
+      // .header__menu-search
+
+      &-search {
+         max-width: 360px;
+         width: 100%;
+         position: relative;
+
+         input {
+            display: block;
+            width: 100%;
+            border-radius: 23px;
+            border: 1px solid #d9dfe5;
+            height: 46px;
+            padding-left: 25px;
+            padding-right: 70px;
+            color: $text;
+
+            &::placeholder {
+               color: #898f96;
+               font-weight: 400;
+            }
+         }
+
+         button {
+            position: absolute;
+            width: 70px;
+            height: 46px;
+            border: none;
+            border-radius: 23px;
+            background-color: #0674ec;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+         }
+      }
+   }
+
+
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.menu {
+
+   // .menu__list
+
+   &__list {
+      display: flex;
+      align-items: center;
+
+      li {
+         display: inline-block;
+
+         &+li {
+            margin-left: 30px;
+         }
+      }
+
+      a {
+         color: #333333;
+         font-size: 15px;
+         font-weight: 500;
+         text-transform: uppercase;
+      }
+   }
 }
 
-
-
-.box {
-  font-size: 12px;
-  padding: 0;
-  margin: 0;
-  text-align: right;
+.icon-link {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.test {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  width: 200px;
-  transition: all 0.5s;
+.icon-link+.icon-link {
+   margin-left: 30px;
+}
+
+.notification {
+   position: absolute;
+   width: 22px;
+   height: 22px;
+   border-radius: 50%;
+
+   top: -18px;
+   right: -11px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 14px;
+   color: #fff;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+
+.notification--alarm {
+   background-color: $red;
+}
+
+.notification--envelope {
+   background-color: $green;
+}
+
+.notification--cart {
+   background-color: $blue;
 }
