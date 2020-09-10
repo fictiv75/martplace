@@ -155,6 +155,11 @@
          font-size: 15px;
          font-weight: 500;
          text-transform: uppercase;
+         transition: all 0.3s;
+
+         &:hover {
+            color: #0674ec;
+         }
       }
    }
 }
@@ -258,7 +263,7 @@
          cursor: pointer;
          transition: all 0.3s;
 
-         &::hover {
+         &:hover {
             background-color: #ffffff;
             color: #0674ec;
          }
@@ -270,7 +275,7 @@
             background-color: #ffffff;
             color: #0674ec;
 
-            &::hover {
+            &:hover {
                background-color: transparent;
                color: #fff;
             }
@@ -278,21 +283,111 @@
       }
    }
 
+   &__search-wrapper {
+      position: absolute;
+      max-width: 1140px;
+      width: 100%;
+      bottom: -67px;
+   }
 
    // .slide__search-box
 
-   &__search-box {}
+   &__search-box {
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+      background-color: #ffffff;
+      z-index: 10;
+
+      &::after {
+         content: '';
+         position: absolute;
+         width: 1110px;
+         height: 135px;
+         border-radius: 6px;
+         background-color: rgba(255, 255, 255, 0.5);
+         top: -13px;
+         left: 50%;
+         transform: translateX(-50%);
+         z-index: -1;
+      }
+
+      &::before {
+         content: '';
+         position: absolute;
+         width: 1080px;
+         height: 135px;
+         border-radius: 6px;
+         background-color: rgba(255, 255, 255, 0.5);
+         top: -26px;
+         left: 50%;
+         transform: translateX(-50%);
+         z-index: -2;
+
+      }
+   }
 }
 
 .form {
+   padding: 40px;
+   display: flex;
+   justify-content: space-between;
+
+
+   // .form__search-block
+
+   &__search-block {
+      position: relative;
+      max-width: 807px;
+      width: 100%;
+   }
 
    // .form__search
 
-   &__search {}
+   &__search {
+      padding-left: 39px;
+      padding-right: 195px;
+      max-width: 807px;
+      width: 100%;
+      height: 55px;
+      color: $text;
+      border-radius: 4px;
+      border: 1px solid #dcdcdc;
+
+      &::placeholder {
+         color: #898f96;
+         font-weight: 400;
+      }
+   }
 
    // .form__select
 
-   &__select {}
+   &__select {
+      position: absolute;
+      width: 193px;
+      height: 55px;
+      top: 0;
+      right: 0;
+      border: none;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border: 1px solid #dcdcdc;
+   }
+
+   button {
+      width: 223px;
+      border: none;
+      border-radius: 4px;
+      color: #ffffff;
+      background-color: #0674ec;
+      font-size: 16px;
+      padding: 17px;
+      cursor: pointer;
+   }
 }
 
 // SLIDE END
+
+.section {
+   height: 200px;
+}

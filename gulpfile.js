@@ -55,7 +55,7 @@ gulp.task('browser-sync', function() {
         server: {
             baseDir: "app/"
         },
-        browser: ["firefox"]
+        // browser: ["firefox"]
     });
 });
 
