@@ -1,0 +1,184 @@
+@font-face {
+	font-family: 'Linearicons-Free';
+	src:url('../fonts/Linearicons-Free.eot?w118d');
+	src:url('../fonts/Linearicons-Free.eot?#iefixw118d') format('embedded-opentype'),
+		url('../fonts/Linearicons-Free.woff2?w118d') format('woff2'),
+		url('../fonts/Linearicons-Free.woff?w118d') format('woff'),
+		url('../fonts/Linearicons-Free.ttf?w118d') format('truetype'),
+		url('../fonts/Linearicons-Free.svg?w118d#Linearicons-Free') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.lnr {
+	font-family: 'Linearicons-Free';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+// <span class="lnr lnr-alarm"></span>
+
+.lnr-alarm:before {
+	content: "\e858";
+}
+.lnr-envelope:before {
+	content: "\e818";
+}
+.lnr-cart:before {
+	content: "\e82e";
+}
+.lnr-magnifier:before {
+	content: "\e86f";
+}
+.lnr-chevron-down:before {
+	content: "\e874";
+}
+.lnr-chevron-left:before {
+	content: "\e875";
+}
+.lnr-chevron-right:before {
+	content: "\e876";
+}
+.lnr-heart:before {
+	content: "\e813";
+}
+.lnr-briefcase:before {
+	content: "\e84c";
+}
+.lnr-cloud-download:before {
+	content: "\e80b";
+}
+.lnr-smile:before {
+	content: "\e854";
+}
+.lnr-users:before {
+	content: "\e82b";
+}
+.lnr-license:before {
+	content: "\e822";
+}
+.lnr-magic-wand:before {
+	content: "\e803";
+}
+.lnr-lock:before {
+	content: "\e80f";
+}
+.lnr-chart-bars:before {
+	content: "\e843";
+}
+.lnr-leaf:before {
+	content: "\e849";
+}
+.lnr-phone:before {
+	content: "\e831";
+}
+.lnr-bubble:before {
+	content: "\e83f";
+}
+.lnr-clock:before {
+	content: "\e864";
+}
+.lnr-eye:before {
+	content: "\e81b";
+}
+.lnr-phone-handset:before {
+	content: "\e830";
+}
+.lnr-map-marker:before {
+	content: "\e833";
+}
+.lnr-arrow-left:before {
+	content: "\e879";
+}
+.lnr-arrow-right:before {
+	content: "\e87a";
+}
+.lnr-user:before {
+	content: "\e82a";
+}
+.lnr-inbox:before {
+	content: "\e81a";
+}
+.lnr-question-circle:before {
+	content: "\e87d";
+}
+.lnr-cog:before {
+	content: "\e810";
+}
+.lnr-dice:before {
+	content: "\e812";
+}
+.lnr-chart-bars:before {
+	content: "\e843";
+}
+.lnr-trash:before {
+	content: "\e811";
+}
+.lnr-cloud-upload:before {
+	content: "\e80a";
+}
+.lnr-book:before {
+	content: "\e828";
+}
+.lnr-exit:before {
+	content: "\e820";
+}
+.lnr-star:before {
+	content: "\e814";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?jtivr7');
+  src:  url('../fonts/icomoon.eot?jtivr7#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?jtivr7') format('truetype'),
+    url('../fonts/icomoon.woff?jtivr7') format('woff'),
+    url('../fonts/icomoon.svg?jtivr7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+.icon-dribbble:before {
+  content: "\f17d";
+}
+.icon-google:before {
+  content: "\f1a0";
+}

@@ -1,125 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Martplace</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <title>Martplace</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"> -->
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
   <header class="header">
-    <div class="header__top">
-      <div class='container'>
-        <div class="header__top-inner">
-          <div class="header__logo">
-            <a href="#">
-              <img src="images/logo.png" alt="Logo">
-            </a>
-          </div>
-          <div class="header__register">
-            <a href="#">Become a Seller</a>
-          </div>
-          <div class="header__icons-panel">
-            <a class="icon-link" href="#">
-              <object data="images/icons/alarm.svg" type="image/svg+xml" width="17"></object>
-              <span class="notification notification--alarm">25</span>
-            </a>
-            <a class="icon-link" href="#">
-              <object data="images/icons/envelope.svg" type="image/svg+xml" width="21"></object>
-              <span class="notification notification--envelope">6</span>
-            </a>
-            <a class="icon-link" href="#">
-              <object data="images/icons/cart.svg" type="image/svg+xml" width="18"></object>
-              <span class="notification notification--cart">2</span>
-            </a>
-          </div>
-          <div class="header__info">
-            <div class="header__info-avatar" style="background-image: url('images/avatar.png');"></div>
-            <div class="header__info-name">
-              Taofiq Hakim
-              <span class="header__info-price">$20.45</span>
-            </div>
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <div class="header__logo">
+          <a href="#">
+            <img src="images/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="header__register">
+          <a href="#">Become a Seller</a>
+        </div>
+        <div class="header__icons-panel">
+          <a class="header__icon-link header__icon-link--alarm" href="#">
+            
+            <span class="notification notification--alarm">25</span>
+          </a>
+          <a class="header__icon-link header__icon-link--envelope" href="#">
+            <span class="notification notification--envelope">6</span>
+          </a>
+          <a class="header__icon-link header__icon-link--cart" href="#">
+            <span class="notification notification--cart">2</span>
+          </a>
+        </div>
+        <div class="header__info">
+          <div class="header__info-avatar" style="background-image: url('images/avatar.png')"></div>
+          <div class="header__info-name">
+            Taofiq Hakim
+            <span class="header__info-price">$20.45</span>
           </div>
         </div>
       </div>
     </div>
-    <div class="header__menu">
-      <div class='container'>
-        <div class="header__menu-inner">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">all products</a></li>
-              <li><a href="#">wordpress</a></li>
-              <li><a href="#">festures</a></li>
-              <li><a href="#">Pages</a></li>
-            </ul>
-          </nav>
-          <div class="header__menu-search">
-            <form action="#">
-              <input type="text" placeholder="Search product here..." required>
-              <button type="submit">
-                <object data="images/icons/search.svg" type="image/svg+xml" width="16"></object>
-              </button>
-            </form>
-          </div>
+  </div>
+  <div class="header__menu">
+    <div class="container">
+      <div class="header__menu-inner">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">all products</a></li>
+            <li><a href="#">wordpress</a></li>
+            <li><a href="#">festures</a></li>
+            <li><a href="#">Pages</a></li>
+          </ul>
+        </nav>
+        <div class="header__menu-search">
+          <form action="#">
+            <input type="text" placeholder="Search product here..." required />
+            <button type="submit">
+              <span class="lnr lnr-magnifier"></span>
+            </button>
+          </form>
         </div>
-
       </div>
     </div>
-  </header>
+  </div>
+</header>
+  <!-- WRITE CODE HERE -->
   <main>
     <section class="slide">
-      <div class='container'>
-        <div class="slide__inner">
-          <h1 class="slide__title">
-            Create Your Own
-            <span>Digital Product Marketplace</span>
-          </h1>
-          <p class="slide__descr">
-            MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
-          </p>
-          <div class="slide__btn">
-            <button class="slide__btn-button slide__btn-button--active" type="button">View All Products</button>
-            <button class="slide__btn-button" type="button">Popular Products</button>
-          </div>
-        </div>
-        <div class="slide__search-wrapper">
-          <div class="slide__search-box">
-            <form action="#" class="form">
-              <div class="form__search-block">
-                <input class="form__search" type="text" placeholder="Search your products...">
-                <select name="categories" class="form__select">
-                  <option value="0">All Categories</option>
-                  <option value="1">Wordpress</option>
-                  <option value="2">Landing Page</option>
-                  <option value="3">Psd Template</option>
-                  <option value="4">Plugins</option>
-                  <option value="5">HTML Template</option>
-                  <option value="6">Components</option>
-                  <option value="7">Joomla Template</option>
-                </select>
-              </div>
-              <button type="submit">Search Now</button>
-            </form>
-          </div>
-        </div>
+  <div class="container">
+    <div class="slide__inner">
+      <h1 class="slide__title">
+        Create Your Own
+        <span>Digital Product Marketplace</span>
+      </h1>
+      <p class="slide__descr">
+        MartPlace is the most powerful, & customizable template for Easy
+        Digital Downloads Products
+      </p>
+      <div class="slide__btn">
+        <button
+          class="slide__btn-button slide__btn-button--active"
+          type="button"
+        >
+          View All Products
+        </button>
+        <button class="slide__btn-button" type="button">
+          Popular Products
+        </button>
       </div>
-    </section>
+    </div>
+    <div class="slide__search-wrapper">
+      <div class="slide__search-box">
+        <form action="#" class="form">
+          <div class="form__search-block">
+            <input
+              class="form__search"
+              type="text"
+              placeholder="Search your products..."
+            />
+            <select name="categories" class="form__select">
+              <option value="0">All Categories</option>
+              <option value="1">Wordpress</option>
+              <option value="2">Landing Page</option>
+              <option value="3">Psd Template</option>
+              <option value="4">Plugins</option>
+              <option value="5">HTML Template</option>
+              <option value="6">Components</option>
+              <option value="7">Joomla Template</option>
+            </select>
+          </div>
+          <button type="submit">Search Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
   </main>
 
 
-
-
-
+  <!-- STOP WRITE CODE -->
+  <footer>
+  
+</footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 
 </html>
