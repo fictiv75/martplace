@@ -3,15 +3,19 @@
 @@include('components/_head.html')
 
 <body>
-  @@include('components/_header.html')
-  <!-- WRITE CODE HERE -->
-  <main>
-    @@include('components/_slide.html')
-  </main>
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/_header.html')
+      <!-- WRITE CODE HERE -->
+      <main>
+        @@include('components/_slide.html')
+        @@include('components/_features.html')
+      </main>
 
-
-  <!-- STOP WRITE CODE -->
-  @@include('components/_footer.html')
+    </div>
+    <!-- STOP WRITE CODE -->
+    @@include('components/_footer.html')
+  </div>
   @@include('components/_scripts.html')
 </body>
 

@@ -16,7 +16,9 @@
 </head>
 
 <body>
-  <header class="header">
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
   <div class="header__top">
     <div class="container">
       <div class="header__top-inner">
@@ -55,11 +57,54 @@
       <div class="header__menu-inner">
         <nav class="menu">
           <ul class="menu__list">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">all products</a></li>
-            <li><a href="#">wordpress</a></li>
+            <li class="header__drop-down drop-down__menu">
+              <a class="drop-down__link" href="#">HOME</a>
+              <ul class="drop-down__list" style="display: none;">
+                <li><a class="active" href="#">Home One Multi User</a></li>
+                <li><a href="#">Home Two Single User</a></li>
+                <li><a href="#">Home Three Product</a></li>
+              </ul>
+            </li>
+            <li class="header__drop-down drop-down__menu">
+              <a class="drop-down__link" href="#">all products</a>
+              <ul class="drop-down__list" style="display: none;">
+                <li><a class="active" href="#">Recent Items</a></li>
+                <li><a href="#">Popular Items</a></li>
+                <li><a href="#">Featured Items</a></li>
+                <li><a href="#">Free Templates</a></li>
+                <li><a href="#">Follow Feed</a></li>
+                <li><a href="#">Top Authors</a></li>
+              </ul>
+            </li>
+            <li class="header__drop-down drop-down__menu">
+              <a class="drop-down__link" href="#">wordpress</a>
+              <ul class="drop-down__list" style="display: none;">
+                <li><a class="active" href="#">Popular Items</a></li>
+                <li><a href="#">Admin Templates</a></li>
+                <li><a href="#">Blog / Magazine / News</a></li>
+                <li><a href="#">Creative</a></li>
+                <li><a href="#">Corporate Business</a></li>
+                <li><a href="#">Resume Portfolio</a></li>
+                <li><a href="#">eCommerce</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Landing Pages</a></li>
+              </ul>
+            </li>
             <li><a href="#">festures</a></li>
-            <li><a href="#">Pages</a></li>
+            <li class="header__drop-down drop-down__menu">
+              <a class="drop-down__link" href="#">Pages</a>
+              <ul class="drop-down__list" style="display: none;">
+                <li><a class="active" href="#">Popular Items</a></li>
+                <li><a href="#">Admin Templates</a></li>
+                <li><a href="#">Blog / Magazine / News</a></li>
+                <li><a href="#">Creative</a></li>
+                <li><a href="#">Corporate Business</a></li>
+                <li><a href="#">Resume Portfolio</a></li>
+                <li><a href="#">eCommerce</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Landing Pages</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
         <div class="header__menu-search">
@@ -74,9 +119,9 @@
     </div>
   </div>
 </header>
-  <!-- WRITE CODE HERE -->
-  <main>
-    <section class="slide">
+      <!-- WRITE CODE HERE -->
+      <main>
+        <section class="slide">
   <div class="container">
     <div class="slide__inner">
       <h1 class="slide__title">
@@ -125,13 +170,53 @@
     </div>
   </div>
 </section>
-  </main>
+        <section class="features">
+  <div class='container'>
+    <div class="features__inner">
+      <div class="features__item">
+        <div class="features__item-image">
+          <img src="images/features/features-1.png" alt="Icon">
+        </div>
+        <h3 class="features__item-title">Best UX Research</h3>
+        <p class="features__item-text">
+          Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+          the mattis, leo quam aliquet diam
+          congue is laoreet elit metus.
+        </p>
+      </div>
+      <div class="features__item">
+        <div class="features__item-image">
+          <img src="images/features/features-2.png" alt="Icon">
+        </div>
+        <h3 class="features__item-title">Fully Responsive</h3>
+        <p class="features__item-text">
+          Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+          the mattis, leo quam aliquet diam
+          congue is laoreet elit metus.
+        </p>
+      </div>
+      <div class="features__item">
+        <div class="features__item-image">
+          <img src="images/features/features-3.png" alt="Icon">
+        </div>
+        <h3 class="features__item-title">Buy & Sell Easily</h3>
+        <p class="features__item-text">
+          Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+          the mattis, leo quam aliquet diam
+          congue is laoreet elit metus.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+      </main>
 
-
-  <!-- STOP WRITE CODE -->
-  <footer>
+    </div>
+    <!-- STOP WRITE CODE -->
+    <footer>
   
 </footer>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
