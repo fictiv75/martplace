@@ -146,10 +146,14 @@
             padding-left: 25px;
             padding-right: 70px;
             color: $text;
+            
 
             &::placeholder {
                color: #898f96;
                font-weight: 400;
+            }
+            &:focus {
+               outline: 1px solid #ccc;
             }
          }
 
