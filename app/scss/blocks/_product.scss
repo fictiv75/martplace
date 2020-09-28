@@ -1,0 +1,142 @@
+.product-item {
+  margin: 0 auto;
+
+  // .product-item__inner
+
+  &__inner {
+    max-width: 360px;
+    width: 100%;
+  }
+
+  // .product-item__images
+
+  &__images {
+    position: relative;
+    display: block;
+    min-height: 230px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  // .product-item__images--hover
+
+  &__images--hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0674ec;
+    background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);
+    opacity: 0;
+    transition: opacity .3s;
+    &:hover {
+      opacity: 0.9;
+    }
+
+    a {
+      padding: 0 30px;
+      line-height: 45px;
+      color: #fff;
+      border-radius: 23px;
+      border: 1px solid #f4f4f4;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+      & + a {
+        margin-left: 11px;
+      }
+      &:hover {
+        color: #0674ec;
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  // .product-item__wrapper
+
+  &__wrapper {
+    background-color: #fff;
+  }
+
+  // .product-item__content
+
+  &__content {
+    padding: 30px 30px 34px;
+    border-bottom: 1px solid #ececec;
+  }
+
+
+  // .product-item__title
+
+  &__title {
+    margin-bottom: 17px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $black;
+  }
+
+  // .product-item__name
+
+  &__name {}
+
+  // .product-item__author
+
+  &__author {}
+
+  // .product-item__avatar
+
+  &__avatar {}
+
+  // .product-item__category
+
+  &__category {
+    display: none;
+  }
+
+  // .product-item__description
+
+  &__description {}
+
+  // .product-item__selection
+
+  &__selection {}
+
+  // .product-item__info
+
+  &__info {}
+
+  // .product-item__info-price
+
+  &__info-price {}
+
+  // .product-item__info-action
+
+  &__info-action {}
+
+  // .product-item__info-star
+
+  &__info-star {}
+}
+
+.avatar {}
+
+.featured-icon {}
+
+.lnr {}
+
+.lnr-heart {}
+
+.lnr-bubble {}
+
+.lnr-cart {}
+
+.rate-star {}
+
+main {
+  display: flex;
+  background-color: #f6f7fb;
+}
