@@ -1,0 +1,53 @@
+.banner {
+
+   // .banner__section
+
+   &__section {
+      padding: 110px 0;
+      width: 100%;
+
+      background-color: rgba(21, 26, 32, 0.9);
+      background-image: linear-gradient(to left, #0d3ef2 0%, #7221a0 100%);
+   }
+
+   // .banner__wrapper
+
+   &__wrapper {
+      text-align: center;
+   }
+
+   // .banner__title
+
+   &__title {
+      margin-bottom: 20px;
+      font-size: 36px;
+      color: #fff;
+   }
+
+   // .banner__description
+
+   &__description {
+      margin-bottom: 50px;
+      color: #e7e7e7;
+      font-size: 18px;
+   }
+
+   // .banner__link
+
+   &__link {
+      padding: 0 43px;
+      color: #0674ec;
+      font-size: 16px;
+      line-height: 55px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 28px;
+      border: 1px solid transparent;
+      background-color: #ffffff;
+      transition: all .3s;
+      &:hover {
+         color:#fff;
+         background-color: transparent;
+         border: 1px solid #fff;
+      }
+   }
+}
