@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('components/_head.html')
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/_header.html')
+      <!-- WRITE CODE HERE -->
+      <main>
+        <section class="page-404 page-404__section">
+          <div class="page-404__head">
+            <div class="breadcrumbs">
+              <div class='container'>
+                <div class="breadcrumbs__inner">
+                  <ul class="breadcrumbs__list">
+                    <li><a href="#">Home</a></li>
+                    <li><span>404</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class='container'>
+              <div class="page-404__subtitle">Error-404</div>
+            </div>
+          </div>
+          <div class='container'>
+            <div class="page-404__inner">
+              <div class="page-404__image">
+                <img src="images/404.png" alt="404 image">
+              </div>
+              <div class="page-404__text">Oops! Page Not Found</div>
+              <a href="#" class="page-404__link">Back to Home</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- STOP WRITE CODE -->
+    @@include('components/_footer.html')
+  </div>
+  @@include('components/_scripts.html')
+</body>
+
+</html>

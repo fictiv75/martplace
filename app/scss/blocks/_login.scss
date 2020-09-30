@@ -1,0 +1,202 @@
+.login {
+
+   // .login__wrapper
+
+   &__wrapper {
+      padding-top: 75px;
+      padding-bottom: 120px;
+      background-color: #eff1f5;
+   }
+
+   // .login__content
+
+   &__content {
+      padding: 60px 0;
+      margin: 0 auto;
+      max-width: 555px;
+      box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+      border-radius: 4px;
+      background-color: #ffffff;
+   }
+
+   // .login__title
+
+   &__title {
+      margin-bottom: 25px;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: center;
+      color: #000;
+   }
+
+   // .login__description
+
+   &__description {
+      padding-bottom: 30px;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      border-bottom: 1px solid #e8ebf0;
+   }
+
+   // .login__form
+
+   &__form {
+      padding: 30px 50px 60px;
+
+      label,
+      input {
+         display: block;
+      }
+
+      label {
+         margin-bottom: 30px;
+         font-size: 16px;
+         font-weight: 500;
+         color: #000;
+
+      }
+
+      input {
+         padding: 0 22px;
+         margin-top: 15px;
+         width: 100%;
+         height: 50px;
+         color: $text;
+         background-color: #f4f5f8;
+         border: none;
+
+         &::placeholder {
+            color: #898f96;
+            font-size: 16px;
+         }
+      }
+
+      button {
+         margin-bottom: 40px;
+         padding: 0 58px;
+         color: #ffffff;
+         font-size: 15px;
+         line-height: 50px;
+         font-weight: 500;
+         box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+         border-radius: 25px;
+         border: none;
+         background-color: #0674ec;
+         cursor: pointer;
+         transition: all 0.3s;
+
+         &:hover {
+            background-color: rgba(6, 117, 236, 0.795);
+         }
+      }
+
+   }
+
+   // .login__checkbox
+
+   &__checkbox {}
+
+   // .login__link
+
+   &__link {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+         color: #898f96;
+         font-size: 16px;
+
+         a {
+            color: #0674ec;
+         }
+      }
+   }
+}
+
+.jq-checkbox {
+   position: relative;
+   padding: 0;
+   display: inline-block;
+   vertical-align: -3px;
+   width: 20px;
+   height: 20px;
+   margin: 0 4px 0 0;
+   border: 2px solid #aaa;
+   border-radius: 50%;
+   background-color: #0674ec;
+   box-shadow: none;
+   cursor: pointer;
+   transition: 0.2s;
+}
+
+.jq-checkbox.checked {
+   border: 2px solid #555;
+}
+
+.jq-checkbox .jq-checkbox__div {
+   // display: block;
+   // width: 0;
+   // height: 0;
+   // border-right: 2px solid #555;
+   // border-bottom: 2px solid #555;
+   // transform: rotate(45deg);
+   // position: absolute;
+   // left: 3px;
+   // bottom: 8px;
+   // opacity: 0;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+   // animation: checked linear 0.2s;
+   // animation-iteration-count: 1;
+   // transform-origin: 50% 50%;
+   // animation-fill-mode: forwards;
+   // display: block;
+   // width: 8px;
+   // height: 4px;
+   // border-right: 2px solid #555;
+   // border-bottom: 2px solid #555;
+   // transform: rotate(45deg);
+   // position: absolute;
+   // left: 3px;
+   // bottom: 8px;
+   // opacity: 0;
+   width: 18px;
+   height: 18px;
+   background-image: url('../../images/icons/check.svg');
+   background-position: center;
+}
+
+@keyframes checked {
+   0% {
+      width: 0;
+      height: 0;
+      left: 2px;
+      bottom: 8px;
+      opacity: 0;
+   }
+
+   40% {
+      width: 8px;
+      height: 0;
+      left: 2px;
+      bottom: 4px;
+   }
+
+   60% {
+      width: 8px;
+      height: 0;
+      left: 2px;
+      bottom: 4px;
+   }
+
+   100% {
+      width: 8px;
+      height: 14px;
+      left: 5px;
+      bottom: 4px;
+      opacity: 1;
+   }
+}

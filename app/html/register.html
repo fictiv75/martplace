@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('components/_head.html')
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/_header.html')
+      <!-- WRITE CODE HERE -->
+      <main>
+        <section class="register login__section">
+          <div class="register__head head">
+            <div class="breadcrumbs">
+              <div class='container'>
+                <div class="breadcrumbs__inner">
+                  <ul class="breadcrumbs__list">
+                    <li><a href="#">Home</a></li>
+                    <li><span>Login</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class='container'>
+              <div class="register__subtitle head__subtitle">Login</div>
+            </div>
+          </div>
+          <div class="register__wrapper">
+            <div class='container'>
+              <div class="register__content">
+                <div class="register__content-inner">
+                  <h4 class="register__title">Create Your Account</h4>
+                  <p class="register__description">
+                    Please fill the following fields with appropriate information
+                    to register a new MartPlace account.
+                  </p>
+                </div>
+
+                <div class="register__form">
+                  <form action="#">
+                    <label>
+                      Your Name
+                      <input type="text" placeholder="Enter your name..." required>
+                    </label>
+                    <label>
+                      Email Address
+                      <input type="email" placeholder="Enter your email address" required>
+                    </label>
+                    <label>
+                      Username
+                      <input type="text" placeholder="Enter your username..." required>
+                    </label>
+                    <label>
+                      Password
+                      <input type="password" placeholder="Enter your password..." required>
+                    </label>
+                    <label>
+                      Confirm Password
+                      <input type="password" placeholder="Enter your password..." required>
+                    </label>
+                    <button type="submit">Register Now</button>
+                    <div class="register__link">
+                      <span>Already have an account <a href="#">Login</a>?</span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- STOP WRITE CODE -->
+    @@include('components/_footer.html')
+  </div>
+  @@include('components/_scripts.html')
+</body>
+
+</html>
