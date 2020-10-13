@@ -4,13 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.min.css">
   <title>Martplace</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
-    rel="stylesheet"
-  />
-  <!-- <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/libs.min.css" />
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
@@ -30,23 +25,348 @@
         <div class="header__register">
           <a href="#">Become a Seller</a>
         </div>
-        <div class="header__icons-panel">
-          <a class="header__icon-link header__icon-link--alarm" href="#">
-            <span class="notification notification--alarm">25</span>
-          </a>
-          <a class="header__icon-link header__icon-link--envelope" href="#">
-            <span class="notification notification--envelope">6</span>
-          </a>
-          <a class="header__icon-link header__icon-link--cart" href="#">
-            <span class="notification notification--cart">2</span>
-          </a>
-        </div>
-        <div class="header__info">
-          <div class="header__info-avatar" style="background-image: url('images/avatar1.jpg')"></div>
-          <div class="header__info-name">
-            Taofiq Hakim
-            <span class="header__info-price">$20.45</span>
+        <div class="header__box">
+          <div class="header__box-notification box-notification">
+            <a class="box-notification__link" href="#">
+              <svg width="20" height="20" class="box-notification__link-icon alarm-icon">
+                <use xlink:href="images/sprite.svg#alarm"></use>
+              </svg>
+              <span class="box-notification__link-counter counter">25</span>
+            </a>
+
+            <div class="box-notification__menu notification-menu">
+              <div class="notification-menu__header">
+                <h5 class="notification-menu__title">My Notifications</h5>
+                <a href="#" class="notification-menu__view"> View All </a>
+              </div>
+              <a href="#" class="notification-menu__link">
+                <img class="notification-menu__link-image menu-image" src="images/avatar-img.png" alt="avatar"/>
+                <div class="notification-menu__link-info menu-info">
+                  <div class="menu-info__name">
+                    <b>Anderson</b> added to Favourite
+                    <span class="menu-info__name-theme">Marketify Coffee Shop</span>
+                  </div>
+                  <div class="menu-info__date">Just now</div>
+                </div>
+                <div class="notification-menu__link-icon menu-icon__circle">
+                  <svg width="14" height="14" class="menu-icon__heart">
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </div>
+              </a>
+              <a href="#" class="notification-menu__link">
+                <img class="notification-menu__link-image menu-image" src="images/avatar-img.png" alt="avatar" />
+                <div class="notification-menu__link-info menu-info">
+                  <div class="menu-info__name">
+                    <b>Michael Jorden</b> commented on
+                    <span class="menu-info__name-theme">
+                      MartPlace Extension Bundle
+                    </span>
+                  </div>
+                  <div class="menu-info__date">2 hours ago</div>
+                </div>
+                <div class="notification-menu__link-icon menu-icon__circle">
+                  <svg width="16" height="14" class="menu-icon__bubble">
+                    <use xlink:href="images/sprite.svg#bubble"></use>
+                  </svg>
+                </div>
+              </a>
+              <a href="#" class="notification-menu__link">
+                <img class="notification-menu__link-image menu-image" src="images/avatar-img.png" alt="avatar" />
+                <div class="notification-menu__link-info menu-info">
+                  <div class="menu-info__name">
+                    <b>Moshed</b> Purchased
+                    <span class="menu-info__name-theme">
+                      Bryson-Responsive Template
+                    </span>
+                  </div>
+                  <div class="menu-info__date">6 hours ago</div>
+                </div>
+                <div class="notification-menu__link-icon menu-icon__circle">
+                  <svg width="16" height="14" class="menu-icon__cart">
+                    <use xlink:href="images/sprite.svg#cart"></use>
+                  </svg>
+                </div>
+              </a>
+              <a href="#" class="notification-menu__link">
+                <img class="notification-menu__link-image menu-image" src="images/avatar-img.png" alt="avatar" />
+                <div class="notification-menu__link-info menu-info">
+                  <div class="menu-info__name">
+                    <b>Tamim</b> wrote a review on
+                    <span class="menu-info__name-theme">
+                      Rida-Responsive vCard Temp...
+                    </span>
+                  </div>
+                  <div class="menu-info__date">2 days ago</div>
+                </div>
+                <div class="notification-menu__link-icon menu-icon__circle">
+                  <svg width="16" height="14" class="menu-icon__star">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
           </div>
+          <div class="header__box-message box-message">
+            <a class="box-message__link" href="#">
+              <svg width="21" height="21" class="box-message__link-icon envelope-icon">
+                <use xlink:href="images/sprite.svg#envelope"></use>
+              </svg>
+              <span class="box-message__link-counter counter">6</span>
+            </a>
+            <div class="box-message__menu message-menu hidden">
+              <div class="message-menu__header">
+                <h5 class="message-menu__title">My Messages</h5>
+                <a href="#" class="message-menu__link-view"> View All </a>
+              </div>
+              <a href="#" class="message-menu__link">
+                <img class="message-menu__link-image menu-image" src="images/avatar-img.png" alt="avatar" />
+                <div class="message-menu__link-info">
+                  <div class="link-info__name">Washim</div>
+                  <div class="message-menu__link-icon message-menu__link-icon--active">
+                    <svg width="16" height="10" class="link-icon__envelope">
+                      <use xlink:href="images/sprite.svg#envelope"></use>
+                    </svg>
+                  </div>
+                  <div class="link-info__date link-info__date--active">
+                    Just now
+                  </div>
+                </div>
+                <div class="message-menu__link-text">
+                  Hello John Smith! Nunc placerat id...
+                </div>
+              </a>
+              <a href="#" class="message-menu__link">
+                <img class="message-menu__link-image menu-image" src="images/avatar-img.png" alt="avatar" />
+                <div class="message-menu__link-info">
+                  <div class="link-info__name">Bulbul Ahmed</div>
+                  <div class="message-menu__link-icon message-menu__link-icon--active">
+                    <svg width="16" height="10" class="link-icon__envelope">
+                      <use xlink:href="images/sprite.svg#envelope"></use>
+                    </svg>
+                  </div>
+                  <div class="link-info__date link-info__date--active">
+                    2 hours ago
+                  </div>
+                </div>
+                <div class="message-menu__link-text">
+                  Hello John Smith! Nunc placerat id...
+                </div>
+              </a>
+              <a href="#" class="message-menu__link">
+                <img class="message-menu__link-image menu-image" src="images/avatar-img.png" alt="avatar" />
+                <div class="message-menu__link-info">
+                  <div class="link-info__name">EchoTheme</div>
+                  <div class="message-menu__link-icon message-menu__link-icon--active">
+                    <svg width="16" height="10" class="link-icon__reply">
+                      <use xlink:href="images/sprite.svg#reply"></use>
+                    </svg>
+                  </div>
+                  <div class="link-info__date link-info__date--active">
+                    Jul 16
+                  </div>
+                </div>
+                <div class="message-menu__link-text">
+                  Hello John Smith! Nunc placerat id...
+                </div>
+              </a>
+              <a href="#" class="message-menu__link">
+                <img class="message-menu__link-image menu-image" src="images/avatar-img.png" alt="avatar" />
+                <div class="message-menu__link-info">
+                  <div class="link-info__name">Themeluva</div>
+                  <div class="message-menu__link-icon">
+                    <svg width="16" height="10" class="link-icon">
+                      <use xlink:href="images/sprite.svg#"></use>
+                    </svg>
+                  </div>
+                  <div class="link-info__date link-info__date--active">
+                    May 23
+                  </div>
+                </div>
+                <div class="message-menu__link-text">
+                  Hello John Smith! Nunc placerat id...
+                </div>
+              </a>
+              <a href="#" class="message-menu__link">
+                <img class="message-menu__link-image menu-image" src="images/avatar-img.png" alt="avatar" />
+                <div class="message-menu__link-info">
+                  <div class="link-info__name">Adnan</div>
+                  <div class="message-menu__link-icon">
+                    <svg width="0" height="0" class="link-icon">
+                      <use xlink:href="images/sprite.svg#"></use>
+                    </svg>
+                  </div>
+                  <div class="link-info__date link-info__date--active">
+                    Mar 26
+                  </div>
+                </div>
+                <div class="message-menu__link-text">
+                  Hello John Smith! Nunc placerat id...
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="header__box-basket box-basket">
+            <a class="box-basket__link" href="#">
+              <svg width="20" height="20" class="box-basket__link-icon cart-icon">
+                <use xlink:href="images/sprite.svg#cart"></use>
+              </svg>
+              <span class="box-basket__link-counter counter">2</span>
+            </a>
+            <div class="box-basket__menu basket-menu hidden">
+              <div class="basket-menu__item">
+                <img class="basket-menu__item-image" src="images/basket-image.jpg" alt="Theme image" />
+                <div class="basket-menu__item-info item-info">
+                  <div class="item-info__name">
+                    Finance and Consulting Business Theme
+                  </div>
+                  <div class="item-info__theme">
+                    <svg width="16" height="16" class="item-info__icon wp-icon">
+                      <use xlink:href="images/sprite.svg#wp"></use>
+                    </svg>
+                    Wordpress
+                  </div>
+                </div>
+                <div class="basket-menu__item-coast">
+                  <svg width="12" height="16" class="item-coast__icon trash-icon">
+                    <use xlink:href="images/sprite.svg#trash"></use>
+                  </svg>
+                  <div class="item-coast__price">$60</div>
+                </div>
+              </div>
+              <div class="basket-menu__item">
+                <img class="basket-menu__item-image" src="images/basket-image.jpg" alt="Theme image" />
+                <div class="basket-menu__item-info item-info">
+                  <div class="item-info__name">
+                    Flounce - Multipurpose OpenCart Theme
+                  </div>
+                  <div class="item-info__theme">
+                    <svg width="16" height="16" class="item-info__icon wp-icon">
+                      <use xlink:href="images/sprite.svg#wp"></use>
+                    </svg>
+                    Wordpress
+                  </div>
+                </div>
+                <div class="basket-menu__item-coast">
+                  <svg width="12" height="16" class="item-coast__icon trash-icon">
+                    <use xlink:href="images/sprite.svg#trash"></use>
+                  </svg>
+                  <div class="item-coast__price">$20</div>
+                </div>
+              </div>
+              <div class="basket-menu__sum menu-sum">
+                <div class="menu-sum__title">
+                  <div class="menu-sum__total">Total :</div>
+                  <div class="menu-sum__price">$80</div>
+                </div>
+                <a href="" class="menu-sum__btn">Go to Cart</a>
+                <a href="" class="menu-sum__btn menu-sum__btn-checkout">Go to Checkout</a>
+              </div>
+            </div>
+          </div>
+          <div class="header__box-user box-user">
+            <a href="#" class="box-user__link">
+              <div class="box-user__avatar" style="background-image: url('images/avatar1.jpg')"></div>
+              <div class="box-user__user-name">
+                Taofiq Hakim
+                <span class="box-user__price">$20.45</span>
+              </div>
+            </a>
+            <nav class="box-user__menu user-menu hidden">
+              <ul class="user-menu__list">
+                <li class="user-menu__item">
+                  <a href="#" class="user-menu__link">
+                    <svg width="20" height="20" class="user-menu__icon user-icon">
+                      <use xlink:href="images/sprite.svg#icon-user"></use>
+                    </svg>
+                    Profile Page
+                  </a>
+                </li>
+                <li class="user-menu__item">
+                  <a href="#" class="user-menu__link">
+                    <svg width="20" height="20" class="user-menu__icon home-icon">
+                      <use xlink:href="images/sprite.svg#icon-home"></use>
+                    </svg>
+                    Dashboard
+                  </a>
+                </li>
+                <li class="user-menu__item">
+                  <a href="#" class="user-menu__link">
+                    <svg width="20" height="20" class="user-menu__icon cog-icon">
+                      <use xlink:href="images/sprite.svg#icon-cog"></use>
+                    </svg>
+                    Account Settings
+                  </a>
+                </li>
+                <li class="user-menu__item">
+                  <a href="#" class="user-menu__link">
+                    <svg width="20" height="20" class="user-menu__icon cart-icon">
+                      <use xlink:href="images/sprite.svg#icon-cart"></use>
+                    </svg>
+                    Your Purchases
+                  </a>
+                </li>
+                <li class="user-menu__item">
+                  <a href="#" class="user-menu__link">
+                    <svg width="20" height="20" class="user-menu__icon heart-icon">
+                      <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    </svg>
+                    Your Favorites
+                  </a>
+                </li>
+                <li class="user-menu__item">
+                  <a href="#" class="user-menu__link">
+                    <svg width="20" height="20" class="user-menu__icon dice-icon">
+                      <use xlink:href="images/sprite.svg#icon-dice"></use>
+                    </svg>
+                    Add Credits
+                  </a>
+                </li>
+                <li class="user-menu__item">
+                  <a href="#" class="user-menu__link">
+                    <svg width="20" height="20" class="user-menu__icon bars-icon">
+                      <use xlink:href="images/sprite.svg#icon-chart-bars"></use>
+                    </svg>
+                    Sales Statements
+                  </a>
+                </li>
+                <li class="user-menu__item">
+                  <a href="#" class="user-menu__link">
+                    <svg width="20" height="20" class="user-menu__icon upload-icon">
+                      <use xlink:href="images/sprite.svg#icon-upload"></use>
+                    </svg>
+                    Upload Item
+                  </a>
+                </li>
+                <li class="user-menu__item">
+                  <a href="#" class="user-menu__link">
+                    <svg width="20" height="20" class="user-menu__icon book-icon">
+                      <use xlink:href="images/sprite.svg#icon-book"></use>
+                    </svg>
+                    Edit Item
+                  </a>
+                </li>
+                <li class="user-menu__item">
+                  <a href="#" class="user-menu__link">
+                    <svg width="20" height="20" class="user-menu__icon briefcase-icon">
+                      <use xlink:href="images/sprite.svg#icon-briefcase"></use>
+                    </svg>
+                    Withdrawals
+                  </a>
+                </li>
+                <li class="user-menu__item">
+                  <a href="#" class="user-menu__link">
+                    <svg width="20" height="20" class="user-menu__icon exit-icon">
+                      <use xlink:href="images/sprite.svg#icon-exit"></use>
+                    </svg>
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
         </div>
       </div>
     </div>
@@ -58,7 +378,7 @@
           <ul class="menu__list">
             <li class="header__drop-down drop-down__menu">
               <a class="drop-down__link" href="#">HOME</a>
-              <ul class="drop-down__list" style="display: none;">
+              <ul class="drop-down__list hidden">
                 <li><a class="active" href="#">Home One Multi User</a></li>
                 <li><a href="#">Home Two Single User</a></li>
                 <li><a href="#">Home Three Product</a></li>
@@ -66,7 +386,7 @@
             </li>
             <li class="header__drop-down drop-down__menu">
               <a class="drop-down__link" href="#">all products</a>
-              <ul class="drop-down__list" style="display: none;">
+              <ul class="drop-down__list hidden">
                 <li><a class="active" href="#">Recent Items</a></li>
                 <li><a href="#">Popular Items</a></li>
                 <li><a href="#">Featured Items</a></li>
@@ -77,7 +397,7 @@
             </li>
             <li class="header__drop-down drop-down__menu">
               <a class="drop-down__link" href="#">wordpress</a>
-              <ul class="drop-down__list" style="display: none;">
+              <ul class="drop-down__list hidden">
                 <li><a class="active" href="#">Popular Items</a></li>
                 <li><a href="#">Admin Templates</a></li>
                 <li><a href="#">Blog / Magazine / News</a></li>
@@ -92,17 +412,90 @@
             <li><a href="#">festures</a></li>
             <li class="header__drop-down drop-down__menu">
               <a class="drop-down__link" href="#">Pages</a>
-              <ul class="drop-down__list" style="display: none;">
-                <li><a class="active" href="#">Popular Items</a></li>
-                <li><a href="#">Admin Templates</a></li>
-                <li><a href="#">Blog / Magazine / News</a></li>
-                <li><a href="#">Creative</a></li>
-                <li><a href="#">Corporate Business</a></li>
-                <li><a href="#">Resume Portfolio</a></li>
-                <li><a href="#">eCommerce</a></li>
-                <li><a href="#">Entertainment</a></li>
-                <li><a href="#">Landing Pages</a></li>
-              </ul>
+              <div class="drop-down__wrapper hidden">
+                <div class="drop-down__item drop-down__item--big">
+                  <h4 class="drop-down__title">MartPlace Pages</h4>
+                  <ul class="drop-down__list">
+                    <li><a href="#">Home Page One</a></li>
+                    <li><a href="#">Home Page Two</a></li>
+                    <li><a href="#">Home Page Three</a></li>
+                    <li><a href="#">Products Grid</a></li>
+                    <li><a href="#">Products List</a></li>
+                    <li><a href="#">Category Grid Sidebar</a></li>
+                    <li><a href="#">Category List Sidebar</a></li>
+                    <li><a href="#">Search Product</a></li>
+                    <li><a href="#">Single Product V-1</a></li>
+                    <li><a href="#">Single Product V-2</a></li>
+                    <li><a href="#">Single Product V-3</a></li>
+                    <li><a href="#">Single Items Comments</a></li>
+                    <li><a href="#">Single Items Reviews</a></li>
+                    <li><a href="#">Single Items Support</a></li>
+                    <li><a href="#">Single Items FAQs</a></li>
+                    <li><a href="#">Favorites Items</a></li>
+                    <li><a href="#">Author Profile</a></li>
+                    <li><a href="#">Author Items</a></li>
+                    <li><a href="#">Customer Reviews</a></li>
+                    <li><a href="#">Followers</a></li>
+                    <li><a href="#">Following</a></li>
+                    <li><a href="#">Product View Variations</a></li>
+                  </ul>
+                </div>
+                <div class="drop-down__item">
+                  <h4 class="drop-down__title">Dashboard</h4>
+                  <ul class="drop-down__list">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Author Purchases</a></li>
+                    <li><a href="#">Items Rating</a></li>
+                    <li><a href="#">Add Credits</a></li>
+                    <li><a href="#">Statements</a></li>
+                    <li><a href="#">Invoice</a></li>
+                    <li><a href="#">Upload Item</a></li>
+                    <li><a href="#">Edit Items</a></li>
+                    <li><a href="#">Withdrawals</a></li>
+                    <li><a href="#">Add Payment Method</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                  </ul>
+                </div>
+                <div class="drop-down__item drop-down__item--big">
+                  <h4 class="drop-down__title">Others Pages</h4>
+                  <ul class="drop-down__list">
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Message Inbox</a></li>
+                    <li><a href="#">Message Compose</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Recovery Password</a></li>
+                    <li><a href="#">Support Forum</a></li>
+                    <li><a href="#">Forum Details</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Pricing Plan</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">FAQs Details</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Blog V-1</a></li>
+                    <li><a href="#">Blog V-2</a></li>
+                    <li><a href="#">Blog Details</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Menu & Footer Variation</a></li>
+                  </ul>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
@@ -110,7 +503,9 @@
           <form action="#">
             <input type="text" placeholder="Search product here..." required />
             <button type="submit">
-              <span class="lnr lnr-magnifier"></span>
+              <svg width="16" height="16" class="header-icon__magnifier">
+                <use xlink:href="images/sprite.svg#magnifier"></use>
+              </svg>
             </button>
           </form>
         </div>

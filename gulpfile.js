@@ -12,7 +12,7 @@ let gulp = require("gulp"),
 gulp.task("sass", function () {
   return gulp
     .src("app/scss/**/*.scss")
-    .pipe(sass({ outputStyle: "compressed" }))
+    .pipe(sass({ outputStyle: "expanded" }))
     .pipe(rename({ suffix: ".min" }))
     .pipe(
       autoprefixer({
