@@ -87,7 +87,6 @@
           // .notification-menu__header
 
           &__header {
-            // margin-top: 10px;
             position: relative;
             width: 370px;
             padding: 0px 25px;
@@ -262,7 +261,6 @@
         padding-bottom: 14px;
         border-width: 1px;
       }
-
     }
   }
 
@@ -298,50 +296,131 @@
       // .box-message__menu
 
       &__menu {
+        position: absolute;
+        top: 61px;
+        right: -25px;
+        z-index: 1;
+        box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
+        border-radius: 0 0 3px 3px;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s;
+
         .message-menu {
 
           // .message-menu__header
 
-          &__header {}
+          &__header {
+            position: relative;
+            width: 370px;
+            padding: 0px 25px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 0px solid #0674ec;
+            border-bottom: 0px solid #e8ebf0;
+
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: -10px;
+              right: 28px;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 0;
+              border-color: transparent transparent #0675ec transparent;
+              box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
+            }
+          }
 
           // .message-menu__title
 
-          &__title {}
+          &__title {
+            font-size: 18px;
+            color: #000;
+            letter-spacing: -0.6px;
+          }
 
           // .message-menu__link-view
 
-          &__link-view {}
+          &__link-view {
+            color: #0674ec;
+            font-size: 15px;
+          }
 
           // .message-menu__link
 
-          &__link {}
+          &__link {
+            width: 370px;
+            padding: 0 25px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 0px solid #e8ebf0;
+            border-bottom: 0px solid #e8ebf0;
+
+            &:last-child {
+              padding-bottom: 10px;
+              border-bottom: none;
+            }
+          }
 
           // .message-menu__link-image
 
-          &__link-image {}
+          &__link-image {
+            margin-right: 14px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
 
           // .message-menu__link-info
 
           &__link-info {
+            width: 270px;
+            display: flex;
+            flex-direction: column;
+
             .link-info {
+
+              &__top {
+                display: flex;
+                justify-content: space-between;
+              }
 
               // .link-info__name
 
-              &__name {}
+              &__name {
+                font-size: 16px;
+                font-weight: 500;
+                color: #333;
+              }
 
               // .link-info__date
 
-              &__date {}
+              &__date {
+                color: #747a86;
+                // .link-info__date--active
 
-              // .link-info__date--active
-
-              &__date--active {}
+                &--active {
+                  color: #0674ec;
+                }
+              }
             }
           }
 
           // .message-menu__link-icon
 
           &__link-icon {
+            margin-right: auto;
+            margin-left: 13px;
+            fill: $text;
+
             .link-icon {
 
               // .link-icon__envelope
@@ -351,17 +430,46 @@
               // .link-icon__reply
 
               &__reply {}
+
+
+            }
+
+            &--active {
+              fill: #0674ec;
             }
           }
 
           // .message-menu__link-icon--active
 
-          &__link-icon--active {}
+
 
           // .message-menu__link-text
 
           &__link-text {}
         }
+      }
+    }
+    &:hover {
+      .box-message__menu {
+        height: auto;
+        overflow: visible;
+        transition: all 0.5s;
+      }
+
+      .message-menu__header {
+        padding-top: 23px;
+        padding-bottom: 17px;
+        border-width: 1px;
+
+        &::after {
+          border-width: 0 9px 10px 9px;
+        }
+      }
+
+      .message-menu__link {
+        padding-top: 18px;
+        padding-bottom: 14px;
+        border-width: 1px;
       }
     }
   }
