@@ -208,7 +208,7 @@
               </svg>
               <span class="box-basket__link-counter counter">2</span>
             </a>
-            <div class="box-basket__menu basket-menu hidden">
+            <div class="box-basket__menu basket-menu">
               <div class="basket-menu__item">
                 <img class="basket-menu__item-image" src="images/basket-image.jpg" alt="Theme image" />
                 <div class="basket-menu__item-info item-info">
@@ -217,15 +217,17 @@
                   </div>
                   <div class="item-info__theme">
                     <svg width="16" height="16" class="item-info__icon wp-icon">
-                      <use xlink:href="images/sprite.svg#wp"></use>
+                      <use xlink:href="images/sprite.svg#icon-wp"></use>
                     </svg>
                     Wordpress
                   </div>
                 </div>
                 <div class="basket-menu__item-coast">
-                  <svg width="12" height="16" class="item-coast__icon trash-icon">
-                    <use xlink:href="images/sprite.svg#trash"></use>
-                  </svg>
+                  <div class="item-coast__icon-inner">
+                    <svg width="12" height="15" class="item-coast__icon trash-icon">
+                      <use xlink:href="images/sprite.svg#trash"></use>
+                    </svg>
+                  </div>
                   <div class="item-coast__price">$60</div>
                 </div>
               </div>
@@ -236,16 +238,19 @@
                     Flounce - Multipurpose OpenCart Theme
                   </div>
                   <div class="item-info__theme">
+                    
                     <svg width="16" height="16" class="item-info__icon wp-icon">
-                      <use xlink:href="images/sprite.svg#wp"></use>
+                      <use xlink:href="images/sprite.svg#icon-wp"></use>
                     </svg>
                     Wordpress
                   </div>
                 </div>
                 <div class="basket-menu__item-coast">
-                  <svg width="12" height="16" class="item-coast__icon trash-icon">
+                  <div class="item-coast__icon-inner">
+                  <svg width="12" height="16" class="trash-icon">
                     <use xlink:href="images/sprite.svg#trash"></use>
                   </svg>
+                  </div>
                   <div class="item-coast__price">$20</div>
                 </div>
               </div>
@@ -254,8 +259,10 @@
                   <div class="menu-sum__total">Total :</div>
                   <div class="menu-sum__price">$80</div>
                 </div>
-                <a href="" class="menu-sum__btn">Go to Cart</a>
+                <div class="menu-sum__btn-inner">
+                <a href="" class="menu-sum__btn menu-sum__btn-cart">Go to Cart</a>
                 <a href="" class="menu-sum__btn menu-sum__btn-checkout">Go to Checkout</a>
+                </div>
               </div>
             </div>
           </div>
